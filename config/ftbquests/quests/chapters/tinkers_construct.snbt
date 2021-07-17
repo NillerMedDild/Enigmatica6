@@ -1,0 +1,1721 @@
+{
+	id: "1FC4E5EA9B0E6993"
+	group: "74B3CF67FCEAB20F"
+	order_index: 2
+	filename: "tinkers_construct"
+	title: "Tinkers' Construct"
+	icon: {
+		id: "tconstruct:tinkers_anvil"
+		Count: 1b
+		tag: {
+			texture: "thermal:bronze_block"
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Patterns"
+			icon: "tconstruct:pattern"
+			x: 5.5d
+			y: 2.5d
+			subtitle: "What are stencils?"
+			description: ["To get started make a couple patterns. These will help you to make the parts for your first Tier 1 Tools \\& Weapons"]
+			dependencies: ["1DF74B9D5EED99EA"]
+			id: "3DF04CCD2774091C"
+			tasks: [{
+				id: "4DAFBDDD0BB13E2C"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 9L
+			}]
+		}
+		{
+			title: "Part Builder"
+			x: 4.5d
+			y: 1.5d
+			subtitle: "RIP Stencil Table"
+			description: [
+				"The Part Builder will allow you to use your newly minted patterns to create tool \\& weapon parts from materials and composites."
+				""
+				"Place your patterns in the first slot, the material you want to use in the second slot, select which part you want to make and pull it out"
+				""
+				"Patterns aren't reusable like previous version and as such will be consumed for each part you make"
+				""
+				"The right window will show you all the stats on the material you place aswell as how much material you will need for each part"
+			]
+			dependencies: ["3DF04CCD2774091C"]
+			id: "501A88E1FD99D763"
+			tasks: [{
+				id: "0D6EE7827FE26A35"
+				type: "item"
+				item: {
+					id: "tconstruct:part_builder"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			title: "Chests"
+			x: 4.0d
+			y: 2.5d
+			dependencies: ["501A88E1FD99D763"]
+			id: "6284EFFBEBBA5151"
+			tasks: [
+				{
+					id: "54792FE5005BA9F3"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+				{
+					id: "576010A0AFC371A4"
+					type: "item"
+					item: "tconstruct:modifier_chest"
+				}
+			]
+		}
+		{
+			title: "Tinker Station"
+			x: 6.5d
+			y: 1.5d
+			subtitle: "Whats a Tool Station?"
+			description: [
+				"The Tinker Station allows you to create tools from the parts that you just made. Simply select the tool you want to make on the left, place the parts and voila!"
+				""
+				"In addition, the the tinker station allows you to add modifiers and repair your tool"
+				""
+				"However, the tinker station is limited in that it cannot create broad tinkers' tools."
+			]
+			dependencies: [
+				"3DF04CCD2774091C"
+				"501A88E1FD99D763"
+			]
+			id: "47A98E407349190B"
+			tasks: [{
+				id: "6AE825EB2BFC90B8"
+				type: "item"
+				item: {
+					id: "tconstruct:tinker_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:oak_planks"
+					}
+				}
+			}]
+		}
+		{
+			title: "Humble Beginnings"
+			x: 5.5d
+			y: 4.0d
+			shape: "pentagon"
+			subtitle: "Stage 1"
+			description: [
+				"Like most mods, Tinkers' Construct has its own in game documentation to help guide you a long."
+				""
+				"The Materials and You book will guide you through the Tier 1 Materials and tools available to you early game"
+			]
+			hide_dependency_lines: true
+			dependencies: ["35A0F0F12F605F21"]
+			size: 1.25d
+			id: "1DF74B9D5EED99EA"
+			tasks: [{
+				id: "219684EC3B6F1F08"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+			rewards: [{
+				id: "5467D99AC084151D"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Basic Smelting"
+			x: 7.0d
+			y: 5.0d
+			shape: "pentagon"
+			subtitle: "Stage 2"
+			description: ["The Puny Smelting book will guide you through the Tier 2 Materials and tools. In addition, it will guide you through the process of creating your first smelter."]
+			hide_dependency_lines: true
+			dependencies: [
+				"56EE4FFAD3DB3BAC"
+				"01C75CBFDF40A6BF"
+				"21240FF3EB77662D"
+				"35A0F0F12F605F21"
+			]
+			size: 1.25d
+			id: "5F5FEF9EB38C7E37"
+			tasks: [{
+				id: "1621D78BF35FE54C"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+			rewards: [{
+				id: "4FDEC1C7788345E7"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Alloys and More"
+			x: 6.5d
+			y: 6.5d
+			shape: "pentagon"
+			subtitle: "Stage 3"
+			hide_dependency_lines: true
+			dependencies: ["7F1BEA2FB32847D3"]
+			size: 1.25d
+			id: "7C4A47C9A1A40BF0"
+			tasks: [{
+				id: "4D92815CC38D4869"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+			rewards: [{
+				id: "5A77FD949A9D91C4"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Byproducts Galore"
+			x: 4.5d
+			y: 6.5d
+			shape: "pentagon"
+			subtitle: "Stage 4"
+			hide_dependency_lines: true
+			dependencies: ["15D11E0263D85BA7"]
+			size: 1.25d
+			id: "30682190B9F341DE"
+			tasks: [{
+				id: "2D57A8F36763395C"
+				type: "item"
+				item: "tconstruct:fantastic_foundry"
+			}]
+			rewards: [{
+				id: "0307B4AF3FD1527C"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Not Out Yet D:"
+			x: 4.0d
+			y: 5.0d
+			shape: "pentagon"
+			subtitle: "Stage 5"
+			dependencies: ["0000000000000FEC"]
+			size: 1.25d
+			id: "7BD97C2C11CF2DA4"
+			tasks: [
+				{
+					id: "06C869399E082838"
+					type: "item"
+					item: "tconstruct:tinkers_gadgetry"
+				}
+				{
+					id: "5CFFEE0D0D52494C"
+					type: "item"
+					item: "tconstruct:encyclopedia"
+				}
+			]
+			rewards: [{
+				id: "6134A72B6FA7FC8E"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fuel Source"
+			x: 9.0d
+			y: 5.0d
+			dependencies: ["60064EDEB0676ECD"]
+			id: "46DA73F7E971F6E7"
+			tasks: [{
+				id: "4F0F5544F34F65C9"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:seared_fuel_tank"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:seared_heater"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:seared_fuel_gauge"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "I am Grout!"
+			icon: "tconstruct:grout"
+			x: 8.0d
+			y: 4.0d
+			subtitle: "Who's Groot?"
+			description: ["Grout is your prerequisite to make seared bricks for Tinkers' . A little sand here. some gravel there and with some clay you have Groot, I mean grout."]
+			dependencies: ["5F5FEF9EB38C7E37"]
+			id: "60064EDEB0676ECD"
+			tasks: [{
+				id: "2F3454306E50C917"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			icon: "tconstruct:seared_melter"
+			x: 10.0d
+			y: 4.0d
+			shape: "pentagon"
+			dependencies: ["46DA73F7E971F6E7"]
+			dependency_requirement: "one_completed"
+			size: 1.25d
+			id: "7F1BEA2FB32847D3"
+			tasks: [
+				{
+					id: "0673B9E45F281E3B"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "5779FE967F3B76C7"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "5147E067550CAE7C"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 8.5d
+			dependencies: ["3568000CFD702DBE"]
+			id: "6CC3CAC49974B5B7"
+			tasks: [{
+				id: "1C60458D9DF2EA36"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
+		{
+			title: "I am also Grout!"
+			icon: "tconstruct:nether_grout"
+			x: 3.5d
+			y: 7.5d
+			subtitle: "Who's Groot?"
+			dependencies: ["30682190B9F341DE"]
+			id: "3568000CFD702DBE"
+			tasks: [{
+				id: "602E4585F6D928E9"
+				type: "item"
+				item: "tconstruct:nether_grout"
+			}]
+		}
+		{
+			icon: "tconstruct:seared_stone"
+			x: 7.5d
+			y: 7.5d
+			subtitle: "Better Than Grout"
+			dependencies: ["7C4A47C9A1A40BF0"]
+			id: "2073EBBE9E9B2A76"
+			tasks: [{
+				id: "1591D1405D3D1DB3"
+				type: "item"
+				item: "tconstruct:seared_stone"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 7.0d
+			subtitle: "No More Dirt Pillars"
+			dependencies: ["634770F12938DA4E"]
+			id: "6FB35C84FEA4BA0B"
+			tasks: [{
+				id: "13C7C246B46BE652"
+				type: "item"
+				item: "tconstruct:seared_ladder"
+				count: 4L
+			}]
+		}
+		{
+			x: 4.0d
+			y: 9.0d
+			subtitle: "Never Used Scaffolding"
+			dependencies: ["6CC3CAC49974B5B7"]
+			id: "49C4CA385B9FF801"
+			tasks: [{
+				id: "7A9397A52F39F5CE"
+				type: "item"
+				item: "tconstruct:scorched_ladder"
+			}]
+		}
+		{
+			title: "Pickaxe"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+					]
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						traits: 0
+						upgrades: 3
+					}
+				}
+			}
+			x: 4.25d
+			y: -0.25d
+			shape: "pentagon"
+			description: ["Craft your first pickaxe using tier 1 materials"]
+			dependencies: [
+				"501A88E1FD99D763"
+				"47A98E407349190B"
+			]
+			size: 1.25d
+			id: "21240FF3EB77662D"
+			tasks: [
+				{
+					id: "6138CBDEFA39E798"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "65CB08BEAD26E062"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "6EB2827544B61BB2"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Sword"
+			icon: {
+				id: "tconstruct:sword"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 1.75f
+						"tconstruct:attack_damage": 4.675f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 74.8f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:jagged"
+							level: 3s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:flint"
+						"tconstruct:flint"
+						"tconstruct:flint"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 2
+						traits: 0
+						upgrades: 2
+					}
+				}
+			}
+			x: 5.5d
+			y: -0.25d
+			shape: "pentagon"
+			description: ["Craft your first sword using tier 1 materials"]
+			dependencies: [
+				"501A88E1FD99D763"
+				"47A98E407349190B"
+			]
+			size: 1.25d
+			id: "56EE4FFAD3DB3BAC"
+			tasks: [
+				{
+					id: "2AF397D28F53C5D2"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1A3501481167D3E9"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Mattock"
+			icon: {
+				id: "tconstruct:mattock"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_speed": 1.0f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 2.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:knockback"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						traits: 0
+						upgrades: 3
+					}
+				}
+			}
+			x: 6.75d
+			y: -0.25d
+			shape: "pentagon"
+			subtitle: "Who Needs Shovels"
+			description: ["Craft your first mattock using tier 1 materials"]
+			dependencies: [
+				"501A88E1FD99D763"
+				"47A98E407349190B"
+			]
+			size: 1.25d
+			id: "01C75CBFDF40A6BF"
+			tasks: [
+				{
+					id: "3B49D98855A35F1F"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1D7DEB2BB40DA3B3"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "2072FAE75938E9DD"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "tconstruct:smeltery_controller"
+			x: 8.5d
+			y: 8.5d
+			subtitle: "Now With Less Lag Guaranteed!"
+			dependencies: ["2073EBBE9E9B2A76"]
+			id: "634770F12938DA4E"
+			tasks: [
+				{
+					id: "4CB991F27E0DE8F0"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "5EF6BC4044FFB242"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+				{
+					id: "70E24222495C683D"
+					type: "item"
+					item: "tconstruct:seared_drain"
+					count: 2L
+				}
+				{
+					id: "45D01EA93D69EDCF"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "7C838C1A2CFA035C"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "676079D41D7FB37F"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+				{
+					id: "49B4ED5C5576FCE9"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:seared_fuel_tank"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:seared_fuel_gauge"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 9.0d
+			subtitle: "Whats a Tool Forge?"
+			dependencies: ["634770F12938DA4E"]
+			id: "15D11E0263D85BA7"
+			tasks: [{
+				id: "34B7A955CA50C290"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Repair Kits"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "No More Broken Tools"
+			dependencies: ["47A98E407349190B"]
+			id: "3DB940B8A114CE02"
+			tasks: [{
+				id: "7ADC4CF3EB023743"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:wood"
+								}
+							}
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:stone"
+								}
+							}
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:bone"
+								}
+							}
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:flint"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 5.0d
+			dependencies: ["7F1BEA2FB32847D3"]
+			id: "17D92FE4E41CD3F3"
+			tasks: [
+				{
+					id: "1F883B0C3DE7EBE9"
+					type: "item"
+					item: "tconstruct:pickaxe_head_cast"
+				}
+				{
+					id: "70CFDA1FA8EDA078"
+					type: "item"
+					item: "tconstruct:small_axe_head_cast"
+				}
+				{
+					id: "50CB9CBBB508BA4E"
+					type: "item"
+					item: "tconstruct:small_blade_cast"
+				}
+				{
+					id: "04A6A235243770DE"
+					type: "item"
+					item: "tconstruct:repair_kit_cast"
+				}
+			]
+		}
+		{
+			title: "Pig Iron"
+			icon: "tconstruct:pig_iron_ingot"
+			x: 10.5d
+			y: 8.0d
+			subtitle: "Oink!"
+			dependencies: ["634770F12938DA4E"]
+			id: "3CCC94A38AC11226"
+			tasks: [{
+				id: "4C906A33B0B1D003"
+				type: "item"
+				item: "tconstruct:pig_iron_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Queen's Slime"
+			x: 0.5d
+			y: 10.5d
+			subtitle: "Ewww Slimy"
+			dependencies: ["2DE49025226104F9"]
+			id: "30C9416672383714"
+			tasks: [{
+				id: "7067BAB64A76C557"
+				type: "item"
+				item: "tconstruct:queens_slime_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Tier 2 Tools"
+			x: 12.0d
+			y: 4.0d
+			dependencies: ["37FCC255BB3C74A9"]
+			id: "3C31BC6747C8F4AD"
+			tasks: [
+				{
+					id: "657EF92D5FF8F141"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:seared_stone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:copper"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:iron"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "13169150AF6B2478"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:iron"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:seared_stone"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:copper"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "5F27C84761B80F4D"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:seared_stone"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:copper"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:iron"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tier 2 Metals"
+			x: 11.0d
+			y: 3.0d
+			dependencies: ["7F1BEA2FB32847D3"]
+			id: "37FCC255BB3C74A9"
+			tasks: [
+				{
+					id: "62234BF4B5F6E27A"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 16L
+				}
+				{
+					id: "6CA165E9FAE145C7"
+					type: "item"
+					item: "emendatusenigmatica:copper_ingot"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Tier 3 Tools"
+			x: 10.5d
+			y: 10.5d
+			dependencies: [
+				"3CCC94A38AC11226"
+				"792CEDEDB7431337"
+				"409E8265D04193C9"
+				"0B5E17F25BF04343"
+			]
+			id: "7E34A2C0CD84C0C7"
+			tasks: [
+				{
+					id: "749D8E11D15D6109"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:pig_iron"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:slimesteel"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:rose_gold"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:tinkers_bronze"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "5696C32B0C202CF6"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:pig_iron"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:slimesteel"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:rose_gold"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:tinkers_bronze"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7C5199DDDF57BE94"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:tinkers_bronze"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:rose_gold"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:slimesteel"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:pig_iron"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Tier 5 Materials"
+			x: 2.0d
+			y: 5.0d
+			dependencies: ["7BD97C2C11CF2DA4"]
+			id: "0789F65751FC5765"
+		}
+		{
+			title: "Tier 4 Tools"
+			x: -0.5d
+			y: 11.5d
+			dependencies: [
+				"30C9416672383714"
+				"43A9B2DE9ACBC544"
+				"230DD0E3D105FE54"
+			]
+			id: "29FCD7ED94725F1A"
+			tasks: [
+				{
+					id: "69332D4F5F5C462D"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:hepatizon"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:manyullyn"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:queens_slime"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7CB94984A8301947"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:hepatizon"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:manyullyn"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:queens_slime"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "318487348C37905C"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:queens_slime"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:manyullyn"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:hepatizon"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Cobalt"
+			x: 1.5d
+			y: 9.5d
+			subtitle: "RIP Ardite"
+			dependencies: ["6CC3CAC49974B5B7"]
+			id: "2DE49025226104F9"
+			tasks: [{
+				id: "43BE527748611EA2"
+				type: "item"
+				item: "emendatusenigmatica:cobalt_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Soul Forge"
+			x: 1.5d
+			y: 7.5d
+			dependencies: ["6CC3CAC49974B5B7"]
+			id: "3296A92DB406BC05"
+		}
+		{
+			title: "Hepatizon"
+			x: 0.0d
+			y: 9.5d
+			dependencies: ["2DE49025226104F9"]
+			id: "43A9B2DE9ACBC544"
+			tasks: [{
+				id: "6B979F7727166091"
+				type: "item"
+				item: "tconstruct:hepatizon_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Manyullyn"
+			x: 1.5d
+			y: 11.0d
+			dependencies: ["2DE49025226104F9"]
+			id: "230DD0E3D105FE54"
+			tasks: [{
+				id: "487F738E09B503A4"
+				type: "item"
+				item: "tconstruct:manyullyn_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Slimesteel"
+			x: 10.0d
+			y: 9.0d
+			dependencies: ["634770F12938DA4E"]
+			id: "0B5E17F25BF04343"
+			tasks: [{
+				id: "55FA270B6366E078"
+				type: "item"
+				item: "tconstruct:slimesteel_ingot"
+				count: 16L
+			}]
+		}
+		{
+			title: "Tinker's Bronze"
+			x: 8.0d
+			y: 10.5d
+			dependencies: ["634770F12938DA4E"]
+			id: "409E8265D04193C9"
+			tasks: [{
+				id: "421C02795C24CE27"
+				type: "item"
+				item: "tconstruct:tinkers_bronze_ingot"
+				count: 16L
+			}]
+		}
+		{
+			x: 9.0d
+			y: 10.0d
+			dependencies: ["634770F12938DA4E"]
+			id: "792CEDEDB7431337"
+			tasks: [{
+				id: "565CA7DE3586B25D"
+				type: "item"
+				title: "Rose Gold"
+				item: "tconstruct:rose_gold_ingot"
+				count: 16L
+			}]
+		}
+		{
+			x: 12.0d
+			y: 2.0d
+			dependencies: ["37FCC255BB3C74A9"]
+			id: "19482CB218D510F3"
+			tasks: [{
+				id: "0BECF8528DE05123"
+				type: "item"
+				item: "tconstruct:copper_can"
+				count: 3L
+			}]
+		}
+		{
+			x: 12.0d
+			y: 6.0d
+			dependencies: ["17D92FE4E41CD3F3"]
+			id: "3E25407DE933529E"
+			tasks: [{
+				id: "552AF7AC1AD952FE"
+				type: "item"
+				item: "tconstruct:cast_chest"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 9.0d
+			dependencies: ["3CCC94A38AC11226"]
+			id: "2482B8DF8266953C"
+			tasks: [{
+				id: "2390011F2A52C849"
+				type: "item"
+				item: "tconstruct:piggy_backpack"
+				count: 16L
+			}]
+		}
+		{
+			x: 14.0d
+			y: 11.5d
+			id: "15AEAD81EE9337DF"
+			tasks: [{
+				id: "03B77B3E89EC733D"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:quartz_shuriken"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:flint_shuriken"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 13.0d
+			id: "2C9311D068F3E0ED"
+			tasks: [{
+				id: "76125D7EA8E3FA06"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:blood_slime_boots"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:earth_slime_boots"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:sky_slime_boots"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:ichor_slime_boots"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:ender_slime_boots"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 12.0d
+			id: "5E7BF56A71D9D41A"
+			tasks: [{
+				id: "020F9F02A3DF472E"
+				type: "item"
+				item: {
+					id: "tconstruct:sky_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 13.0d
+			id: "2CE7D4F41F4BCC0D"
+			tasks: [{
+				id: "352850BE843DB20C"
+				type: "item"
+				item: {
+					id: "tconstruct:ichor_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 13.5d
+			id: "1757BE1E66609E4A"
+			tasks: [{
+				id: "062FA738C4BC6B9B"
+				type: "item"
+				item: {
+					id: "tconstruct:earth_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 13.5d
+			id: "198071C653AE065B"
+			tasks: [{
+				id: "6AD48D82185F3AA7"
+				type: "item"
+				item: {
+					id: "tconstruct:ender_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Modifiers"
+			x: 15.0d
+			y: 9.0d
+			id: "0BF0315D909AB1AC"
+			tasks: [
+				{
+					id: "39271ECDFF4A125D"
+					type: "item"
+					item: "minecraft:writable_book"
+				}
+				{
+					id: "030DC0E3758A5BE9"
+					type: "item"
+					title: "Any #forge:heads"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:heads"
+						}
+					}
+				}
+				{
+					id: "002752AEACD1277D"
+					type: "item"
+					title: "Any #minecraft:music_discs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:music_discs"
+						}
+					}
+				}
+				{
+					id: "1C75969497008E8C"
+					type: "item"
+					item: "minecraft:end_crystal"
+				}
+			]
+		}
+		{
+			title: "Where It All Begins"
+			x: 5.5d
+			y: 5.5d
+			description: [
+				"Welcome to Tinkers' Construct 3! A new modern spin on a classic mod. "
+				""
+				"At its core, Tinker's Construct is all about creating customized tools \\& weapons from a variety of materials, composites and alloys"
+				""
+				"Create your own everlasting tools and weapons with custom modifiers, traits and abilities."
+				""
+				"This mod is still under early development so check out the Tinkers' What's New Page for the lastest info"
+				""
+				"https://github.com/SlimeKnights/TinkersConstruct/wiki/New-in-Tinkers%27-Construct-3"
+				""
+				"~oniraM"
+			]
+			id: "35A0F0F12F605F21"
+			tasks: [{
+				id: "2F1C8096FC635FC1"
+				type: "checkmark"
+			}]
+		}
+	]
+}
