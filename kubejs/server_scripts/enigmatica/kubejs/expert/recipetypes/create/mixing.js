@@ -27,6 +27,22 @@ onEvent('recipes', (event) => {
                 '#forge:tar'
             ],
             output: 'kubejs:coarse_lapis_lazuli_compound'
+        },
+        {
+            heated: true,
+            inputs: [
+                '#forge:gems/quartz',
+                '#forge:gems/lapis',
+                '#forge:gems/lapis',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                'eidolon:soul_shard',
+                'eidolon:soul_shard',
+                'eidolon:soul_shard',
+                'eidolon:soul_shard',
+                Fluid.of('bloodmagic:life_essence_fluid', 1000)
+            ],
+            output: 'eidolon:lesser_soul_gem'
         }
     ];
 

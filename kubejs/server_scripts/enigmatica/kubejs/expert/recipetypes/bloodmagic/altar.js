@@ -165,6 +165,14 @@ onEvent('recipes', (event) => {
                 consumptionRate: 20,
                 drainRate: 10,
                 id: 'bloodmagic:altar/dusk_tool'
+            },
+            {
+                input: 'botania:livingwood_planks',
+                output: 'eidolon:polished_planks',
+                syphon: 50,
+                altarLevel: 0,
+                consumptionRate: 25,
+                drainRate: 5
             }
         ]
     };
